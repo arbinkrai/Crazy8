@@ -25,27 +25,27 @@ public class Crazy8 {
 //        System.out.println(hand[0].showHand());
         int c = 0;
 
-        do {
+       // do {
             System.out.println(dealer.showHand());
             System.out.println(discard.showHand());
             System.out.println(userPlayer.showHand());
             String userChoice;
-            do {
-                if (c % 2 == 0) {
-                    System.out.println("Which card do you wnat to discard ?");
-                    userChoice = user.nextLine();
-
-                }
-                while (!userPlayer.cards.contains(userChoice)) ;
-                if (c % 2 == 0) {
-
-                    userPlayer.cards.remove(userChoice);
-                    //discard.add(userChoice);
-                    c = c + 1;
-                }
-            }
-            while ((dealer.cards.size() > 0) || (userPlayer.cards.size() > 0));
-//       flipping the first card of the remaining cards on the deck
+//            do {
+//                if (c % 2 == 0) {
+//                    System.out.println("Which card do you wnat to discard ?");
+//                    userChoice = user.nextLine();
+//
+//                }
+//                while (!userPlayer.cards.contains(userChoice)) ;
+//                if (c % 2 == 0) {
+//
+//                    userPlayer.cards.remove(userChoice);
+//                    //discard.add(userChoice);
+//                    c = c + 1;
+//                }
+//            }
+//            while ((dealer.cards.size() > 0) || (userPlayer.cards.size() > 0));
+////       flipping the first card of the remaining cards on the deck
 
             System.out.println("Undelt card remaining in the deck is: " + d1.cards.size());
 
@@ -53,7 +53,5 @@ public class Crazy8 {
             dealer.cards.get(0).flipCard();
 
 
-
         }
     }
-}
